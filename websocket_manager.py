@@ -1,15 +1,10 @@
-
-
-
-
 from fastapi import WebSocket
 import asyncio
 import time
 
-from backend.metrics import metrics
-from backend.queue_manager import event_queue
-from backend.config import WEBSOCKET_CLIENT_LIMIT, METRIC_UPDATE_INTERVAL
-
+from .metrics import metrics
+from .queue_manager import event_queue
+from .config import WEBSOCKET_CLIENT_LIMIT, METRIC_UPDATE_INTERVAL
 
 class ConnectionManager:
 

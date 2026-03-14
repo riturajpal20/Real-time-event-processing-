@@ -1,14 +1,11 @@
-
-
 import asyncio
 import time
 import random
 import uuid
 
-from backend.config import EVENT_RATE
-from backend.queue_manager import event_queue
-from backend.metrics import metrics
-
+from .config import EVENT_RATE
+from .queue_manager import event_queue
+from .metrics import metrics
 
 categories = ["electronics", "clothing", "home", "sports"]
 

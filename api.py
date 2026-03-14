@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from backend.metrics import metrics
-from backend.queue_manager import event_queue
+from metrics import metrics
+from queue_manager import event_queue
 
 router = APIRouter()
 

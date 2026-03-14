@@ -1,17 +1,14 @@
-
-
-
 from fastapi import FastAPI, WebSocket
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 import asyncio
 from pathlib import Path
 
-from backend.event_generator import event_producer
-from backend.workers import start_workers
-from backend.websocket_manager import manager, metrics_stream
-from backend.config import WORKER_COUNT
-from backend.calculate_event_generation import calculate_event_rate
+from .event_generator import event_producer
+from .workers import start_workers
+from .websocket_manager import manager, metrics_stream
+from .config import WORKER_COUNT
+from .calculate_event_generation import calculate_event_rate
 
 app = FastAPI()
 

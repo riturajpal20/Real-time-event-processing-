@@ -1,7 +1,5 @@
-
-
 import asyncio
-from backend.metrics import metrics
+from .metrics import metrics
 
 
 async def calculate_event_rate():
