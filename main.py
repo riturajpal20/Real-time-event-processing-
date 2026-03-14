@@ -4,11 +4,11 @@ from fastapi.responses import FileResponse
 import asyncio
 from pathlib import Path
 
-from .event_generator import event_producer
-from .workers import start_workers
-from .websocket_manager import manager, metrics_stream
-from .config import WORKER_COUNT
-from .calculate_event_generation import calculate_event_rate
+from event_generator import event_producer
+from workers import start_workers
+from websocket_manager import manager, metrics_stream
+from config import WORKER_COUNT
+from calculate_event_generation import calculate_event_rate
 
 app = FastAPI()
 

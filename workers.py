@@ -1,8 +1,8 @@
 import asyncio
 import time
 
-from .queue_manager import event_queue
-from .metrics import metrics
+from queue_manager import event_queue
+from metrics import metrics
 
 
 async def process_event(event):

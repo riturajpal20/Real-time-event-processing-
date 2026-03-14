@@ -3,9 +3,9 @@ import time
 import random
 import uuid
 
-from .config import EVENT_RATE
-from .queue_manager import event_queue
-from .metrics import metrics
+from config import EVENT_RATE
+from queue_manager import event_queue
+from metrics import metrics
 
 categories = ["electronics", "clothing", "home", "sports"]
 
